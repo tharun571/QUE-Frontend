@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".UserScreen">
+
+    <TextView
+        android:id="@+id/textt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MY  QUEUE "
+        android:layout_marginTop="23dp"
+        android:textSize="40sp"
+        android:fontFamily="@font/leoscar"
+        android:gravity="center"
+        android:textColor="#000"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textt"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/transpbg"
+        android:padding="20dp"
+        android:layout_margin="30dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="8dp"
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:id="@+id/img"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_person_pin_24"
+            ></ImageView>
+
+        <TextView
+            android:layout_below="@+id/img"
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Code"
+            android:layout_marginTop="23dp"
+            android:textSize="35sp"
+            android:fontFamily="@font/leoscar"
+            android:gravity="center"
+            android:textColor="#000"/>
+
+        <EditText
+            android:layout_width="150dp"
+            android:id="@+id/edt"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/code"
+            android:layout_centerHorizontal="true"
+            android:hint="Code"
+        />
+        <Button
+            android:layout_below="@+id/edt"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Join Queue"
+            android:id="@+id/enqueue"
+            android:textSize="24sp"
+            android:fontFamily="@font/prodreg"
+            android:background="@drawable/button"/>
+    </RelativeLayout>
+
+</RelativeLayout>
