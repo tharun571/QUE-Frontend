@@ -10,6 +10,7 @@ MERGED from [androidx.appcompat:appcompat:1.2.0] /home/dhruv/.gradle/caches/tran
 MERGED from [androidx.core:core-ktx:1.5.0-alpha05] /home/dhruv/.gradle/caches/transforms-2/files-2.1/2961338931b695571851fe9e620f633b/jetified-core-ktx-1.5.0-alpha05/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/196d25f97cbce410f8d6b51b3bed50a7/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e4e73aeb44dec7de29d539cfabd787b4/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha02] /home/dhruv/.gradle/caches/transforms-2/files-2.1/dddbd0a760b650ddc2ba322c11557deb/jetified-security-crypto-1.1.0-alpha02/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e213048c198638f2634b282d0063ae0a/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/affa0c93ae6332d1dae391d115bfb21a/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.1.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/49946607f4fda767fc2b231bf68ff99b/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -123,6 +124,8 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/dhruv/.grad
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/196d25f97cbce410f8d6b51b3bed50a7/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e4e73aeb44dec7de29d539cfabd787b4/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e4e73aeb44dec7de29d539cfabd787b4/jetified-lifecycle-livedata-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.1.0-alpha02] /home/dhruv/.gradle/caches/transforms-2/files-2.1/dddbd0a760b650ddc2ba322c11557deb/jetified-security-crypto-1.1.0-alpha02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.security:security-crypto:1.1.0-alpha02] /home/dhruv/.gradle/caches/transforms-2/files-2.1/dddbd0a760b650ddc2ba322c11557deb/jetified-security-crypto-1.1.0-alpha02/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e213048c198638f2634b282d0063ae0a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/e213048c198638f2634b282d0063ae0a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/affa0c93ae6332d1dae391d115bfb21a/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41

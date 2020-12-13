@@ -50,7 +50,7 @@
                 android:orientation="vertical"
                 android:layout_gravity="center_horizontal">
                 <EditText
-                    android:id="@+id/editText"
+                    android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:drawableLeft="@drawable/person"
                     android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                     android:layout_marginTop="24dp"/>
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/pwdEditText"
                     android:layout_width="match_parent"
                     android:layout_marginTop="16dp"
                     android:hint="Password"
