@@ -1,0 +1,71 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.que_frontend"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:5:5-23:19
+12        android:allowBackup="true"
+12-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0-alpha05] /home/dhruv/.gradle/caches/transforms-2/files-2.1/2d276ff68301273f862b001a3ccf3bbc/core-1.5.0-alpha05/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher"
+16-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:7:9-43
+17        android:label="@string/app_name"
+17-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_round"
+18-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:9:9-54
+19        android:supportsRtl="true"
+19-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.que_frontend.OwnerScreen" />
+22-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:9-48
+22-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:19-46
+23        <activity android:name="com.example.que_frontend.Register" />
+23-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:13:9-46
+23-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:13:19-43
+24        <activity android:name="com.example.que_frontend.Login" />
+24-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:14:9-43
+24-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:14:19-40
+25        <activity android:name="com.example.que_frontend.UserScreen" />
+25-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:15:9-48
+25-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:15:19-45
+26        <activity android:name="com.example.que_frontend.MainActivity" >
+26-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:16:9-22:20
+26-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:16:19-47
+27            <intent-filter>
+27-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:17:13-21:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:18:17-69
+28-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:18:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:20:17-77
+30-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:20:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <provider
+34-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+35-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+36            android:authorities="com.example.que_frontend.lifecycle-process"
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+37            android:exported="false"
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+38            android:multiprocess="true" />
+38-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+39    </application>
+40
+41</manifest>

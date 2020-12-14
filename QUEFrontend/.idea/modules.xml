@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QUE-Frontend.iml" filepath="$PROJECT_DIR$/.idea/modules/QUE-Frontend.iml" group="QUE-Frontend" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="QUE-Frontend/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QUE-Frontend.iml" filepath="$PROJECT_DIR$/.idea/modules/QUE-Frontend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/QUE-Frontend.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/QUE-Frontend.app.iml" />
     </modules>
   </component>
 </project>
