@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".OwnerScreen"/>
-        <activity android:name=".Register" />
         <activity android:name=".Login" />
+        <activity android:name=".Register" />
         <activity android:name=".UserScreen" />
         <activity android:name=".MainActivity">
             <intent-filter>

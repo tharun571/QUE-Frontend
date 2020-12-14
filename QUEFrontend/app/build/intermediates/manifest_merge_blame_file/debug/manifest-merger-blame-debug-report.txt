@@ -30,7 +30,7 @@
 21        android:theme="@style/AppTheme" >
 21-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:11:9-40
 22        <activity android:name="com.example.que_frontend.OwnerScreen" />
-22-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:9-58
+22-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:9-48
 22-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:19-46
 23        <activity android:name="com.example.que_frontend.Register" />
 23-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:13:9-46
@@ -55,6 +55,17 @@
 30-->/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:20:27-74
 31            </intent-filter>
 32        </activity>
-33    </application>
-34
-35</manifest>
+33
+34        <provider
+34-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+35            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+35-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+36            android:authorities="com.example.que_frontend.lifecycle-process"
+36-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+37            android:exported="false"
+37-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+38            android:multiprocess="true" />
+38-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/dhruv/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+39    </application>
+40
+41</manifest>
