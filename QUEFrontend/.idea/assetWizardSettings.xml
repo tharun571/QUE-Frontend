@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Users/sal15/Downloads/New%20folder/plugins/android/lib/android.jar!/images/material/icons/materialicons/person_pin/baseline_person_pin_24.xml" />
+                                      <entry key="url" value="jar:file:/app/extra/android-studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/email/baseline_email_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_baseline_person_pin_24" />
-                            <entry key="sourceFile" value="C:\Users\sal15\Desktop\QUE-Frontend\QUEFrontend" />
+                            <entry key="color" value="020202" />
+                            <entry key="outputName" value="email" />
+                            <entry key="sourceFile" value="$USER_HOME$/C:\Users\sal15\Desktop\QUE-Frontend\QUEFrontend" />
                           </map>
                         </option>
                       </PersistentState>

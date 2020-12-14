@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Q U E U E "
+                android:text="Q U E"
                 android:textSize="36sp"
                 android:fontFamily="@font/leoscar"
 
@@ -52,7 +52,7 @@
                 <EditText
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
-                    android:drawableLeft="@drawable/person"
+                    android:drawableLeft="@drawable/email"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:inputType="textEmailAddress"
@@ -76,16 +76,7 @@
 
 
 
-                <androidx.appcompat.widget.SwitchCompat
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:text="Customer? "
-                    android:textSize="20dp"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/leoscar"
-                    />
+
                 <CheckBox
                     android:layout_marginTop="8dp"
                     android:layout_width="128dp"
