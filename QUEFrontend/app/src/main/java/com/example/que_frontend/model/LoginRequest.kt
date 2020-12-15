@@ -1,6 +1,6 @@
 package com.example.que_frontend.model
 
 data class LoginRequest (
-        val email:String,
+        val mail:String,
         val password:String
 )

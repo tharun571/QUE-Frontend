@@ -56,8 +56,7 @@ class Login: AppCompatActivity() {
             if (allOk) {
                 loginRequest = LoginRequest(email, password)
                 viewModel.sendLoginRequest(loginRequest)
-                val intent:Intent = Intent(this,UserScreen::class.java)
-                startActivity(intent) // for now without testing
+
             }
         }
 
@@ -101,7 +100,7 @@ class Login: AppCompatActivity() {
                 EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
         ).edit {
             putString("token", token)
-            putString("username", loginRequest.email)
+            putString("username", loginRequest.mail)
             commit()
         }
     }
