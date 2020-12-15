@@ -56,8 +56,7 @@ class Login: AppCompatActivity() {
             if (allOk) {
                 loginRequest = LoginRequest(email, password)
                 viewModel.sendLoginRequest(loginRequest)
-                val intent:Intent = Intent(this,UserScreen::class.java)
-                startActivity(intent) // for now without testing
+
             }
         }
 

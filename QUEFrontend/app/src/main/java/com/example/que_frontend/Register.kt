@@ -1,11 +1,13 @@
 package com.example.que_frontend
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.SwitchCompat
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.que_frontend.helpers.Resource
@@ -20,7 +22,7 @@ class Register: AppCompatActivity() {
     lateinit var nameREditText: EditText
     lateinit var pwdREditText: EditText
     var isShopkeeper:Boolean = false
-    lateinit var switch: Switch
+    lateinit var switch: SwitchCompat
     lateinit var registerButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -57,7 +59,8 @@ class Register: AppCompatActivity() {
             when(response) {
                 is Resource.Success -> {
                     Toast.makeText(this, "Registered User", Toast.LENGTH_SHORT).show()
-                    onBackPressed()
+                    val intent: Intent = Intent(this,UserScreen::class.java)
+                    startActivity(intent)
                 }
                 is Resource.Error -> {
                     Toast.makeText(this, response.message, Toast.LENGTH_SHORT).show()

@@ -8,6 +8,8 @@
         android:minSdkVersion="26"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -20,15 +22,16 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.example.que_frontend.OwnerScreen" />
-        <activity android:name="com.example.que_frontend.Register" />
-        <activity android:name="com.example.que_frontend.Login" />
-        <activity android:name="com.example.que_frontend.UserScreen" />
-        <activity android:name="com.example.que_frontend.MainActivity" >
+        <activity android:name="com.example.que_frontend.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="com.example.que_frontend.Register" />
+        <activity android:name="com.example.que_frontend.UserScreen" />
+        <activity android:name="com.example.que_frontend.MainActivity" >
         </activity>
 
         <provider
