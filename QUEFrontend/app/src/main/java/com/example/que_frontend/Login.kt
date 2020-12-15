@@ -100,7 +100,7 @@ class Login: AppCompatActivity() {
                 EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
         ).edit {
             putString("token", token)
-            putString("username", loginRequest.email)
+            putString("username", loginRequest.mail)
             commit()
         }
     }
