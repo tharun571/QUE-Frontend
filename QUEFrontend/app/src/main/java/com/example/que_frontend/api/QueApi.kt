@@ -32,5 +32,9 @@ object QueApi {
         retrofit.create(authservice::class.java)
     }
 
+    val ownerApiService: ownerService by lazy {
+        retrofit.create(ownerService::class.java)
+    }
 
 }
+

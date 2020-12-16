@@ -14,4 +14,6 @@ interface authservice {
 
     @POST("login")
     suspend fun getLoginResponse(@Body loginRequest: LoginRequest): Response<LoginResponse>
+
+
 }
