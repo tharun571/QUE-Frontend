@@ -23,7 +23,7 @@ private val gson = GsonBuilder()
 
 private val retrofit = Retrofit.Builder()
         .addConverterFactory(GsonConverterFactory.create(gson))
-        .baseUrl("https://que-backend.herokuapp.com/api/user/")
+        .baseUrl("https://que-backend.herokuapp.com/api/")
         .client(okHttpClient)
         .build()
 
@@ -34,6 +34,10 @@ object QueApi {
 
     val ownerApiService: ownerService by lazy {
         retrofit.create(ownerService::class.java)
+    }
+
+    val userApiService: userService by lazy {
+        retrofit.create(userService::class.java)
     }
 
 }
