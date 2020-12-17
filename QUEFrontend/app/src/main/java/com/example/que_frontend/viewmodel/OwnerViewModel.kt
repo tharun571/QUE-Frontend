@@ -17,10 +17,10 @@ class OwnerViewModel : ViewModel(){
     val totalCountResponse = MutableLiveData<Resource<TotalCountResponse>>()
     val totalNamesResponse = MutableLiveData<Resource<TotalNamesResponse>>()
 
-    fun createQue(id:String) {
+    fun createQue(id:String,authHeader:String) {
         viewModelScope.launch {
             createQueResponse.postValue(Resource.Loading())
-            val response = ownerRepository.getCreateResponse(id)
+            val response = ownerRepository.getCreateResponse(id, authHeader)
             createQueResponse.postValue(handleCreateQue(response))
         }
     }
@@ -36,10 +36,10 @@ class OwnerViewModel : ViewModel(){
         return Resource.Error(message)
     }
 
-    fun deleteQue(queId:String, userId:String) {
+    fun deleteQue(queId:String, userId:String,authHeader:String) {
         viewModelScope.launch {
             deleteQueResponse.postValue(Resource.Loading())
-            val response = ownerRepository.deleteQue(queId,userId)
+            val response = ownerRepository.deleteQue(queId,userId,authHeader)
             deleteQueResponse.postValue(handleDeletedQue(response))
         }
     }
@@ -55,10 +55,10 @@ class OwnerViewModel : ViewModel(){
         return Resource.Error(message)
     }
 
-    fun getCount(queId:String) {
+    fun getCount(queId:String,authHeader: String) {
         viewModelScope.launch {
             totalCountResponse.postValue(Resource.Loading())
-            val response = ownerRepository.getCount(queId)
+            val response = ownerRepository.getCount(queId,authHeader)
             totalCountResponse.postValue(handleCount(response))
         }
     }
@@ -74,10 +74,10 @@ class OwnerViewModel : ViewModel(){
         return Resource.Error(message)
     }
 
-    fun getNames(queId:String) {
+    fun getNames(queId:String,authHeader: String) {
         viewModelScope.launch {
             totalNamesResponse.postValue(Resource.Loading())
-            val response = ownerRepository.getNames(queId)
+            val response = ownerRepository.getNames(queId,authHeader)
             totalNamesResponse.postValue(handleNames(response))
         }
     }

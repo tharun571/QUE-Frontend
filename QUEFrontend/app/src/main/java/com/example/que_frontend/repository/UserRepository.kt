@@ -8,15 +8,15 @@ import com.example.que_frontend.model.QuePositionResponse
 import retrofit2.Response
 
 class UserRepository {
-    suspend fun joinQue(queId: String,  userId: String): Response<JoinQueResponse> {
-        return QueApi.userApiService.joinQue(queId, userId)
+    suspend fun joinQue(queId: String,  userId: String,authHeader:String): Response<JoinQueResponse> {
+        return QueApi.userApiService.joinQue(queId, userId,authHeader)
     }
 
-    suspend fun leaveQue(queId: String,  userId: String): Response<LeaveQueResponse> {
-        return QueApi.userApiService.leaveQue(queId, userId)
+    suspend fun leaveQue(queId: String,  userId: String,authHeader: String): Response<LeaveQueResponse> {
+        return QueApi.userApiService.leaveQue(queId, userId,authHeader)
     }
 
-    suspend fun quePosition(queId: String,  userId: String): Response<QuePositionResponse> {
-        return QueApi.userApiService.quePosition(queId, userId)
+    suspend fun quePosition(queId: String,  userId: String,authHeader: String): Response<QuePositionResponse> {
+        return QueApi.userApiService.quePosition(queId, userId ,authHeader)
     }
 }

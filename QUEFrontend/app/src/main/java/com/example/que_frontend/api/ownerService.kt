@@ -5,22 +5,19 @@ import com.example.que_frontend.model.TotalCountResponse
 import com.example.que_frontend.model.TotalNamesResponse
 import com.example.que_frontend.model.createQueResponse
 import retrofit2.Response
-import retrofit2.http.DELETE
-import retrofit2.http.GET
-import retrofit2.http.POST
-import retrofit2.http.Path
+import retrofit2.http.*
 
 interface ownerService {
 
-    @POST("create/{id}")
-    suspend fun getCreateResponse(@Path("id") id:String): Response<createQueResponse>
+    @POST("queue/create/{id}")
+    suspend fun getCreateResponse(@Path("id") id:String, @Header("Authorization") token:String ): Response<createQueResponse>
 
-    @DELETE("{queId}/delete/{userId}")
-    suspend fun deleteQue(@Path("queId") queId :String,@Path("userId") userId :String): Response<DeleteQueResponse>
+    @DELETE("queue/{queId}/delete/{userId}")
+    suspend fun deleteQue(@Path("queId") queId :String,@Path("userId") userId :String , @Header("Authorization") token:String): Response<DeleteQueResponse>
 
-    @GET("{queId}/count")
-    suspend fun getCount(@Path("queId") queId: String): Response<TotalCountResponse>
+    @GET("queue/{queId}/count")
+    suspend fun getCount(@Path("queId") queId: String,  @Header("Authorization") token:String): Response<TotalCountResponse>
 
-    @GET("{queId}/getNames")
-    suspend fun getNames(@Path("queId") queId: String): Response<TotalNamesResponse>
+    @GET("queue/{queId}/getNames")
+    suspend fun getNames(@Path("queId") queId: String,  @Header("Authorization") token:String): Response<TotalNamesResponse>
 }

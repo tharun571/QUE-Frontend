@@ -6,14 +6,14 @@ import java.lang.System;
 public abstract interface authservice {
     
     @org.jetbrains.annotations.Nullable()
-    @retrofit2.http.POST(value = "register")
+    @retrofit2.http.POST(value = "user/register")
     public abstract java.lang.Object getRegisterResponse(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Body()
     com.example.que_frontend.model.RegisterRequest registerRequest, @org.jetbrains.annotations.NotNull()
     kotlin.coroutines.Continuation<? super retrofit2.Response<com.example.que_frontend.model.RegisterResponse>> p1);
     
     @org.jetbrains.annotations.Nullable()
-    @retrofit2.http.POST(value = "login")
+    @retrofit2.http.POST(value = "user/login")
     public abstract java.lang.Object getLoginResponse(@org.jetbrains.annotations.NotNull()
     @retrofit2.http.Body()
     com.example.que_frontend.model.LoginRequest loginRequest, @org.jetbrains.annotations.NotNull()

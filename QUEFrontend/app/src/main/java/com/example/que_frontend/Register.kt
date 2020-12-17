@@ -46,7 +46,7 @@ class Register: AppCompatActivity() {
                 Toast.makeText(this,"Password should be min 6 characters!!",Toast.LENGTH_SHORT).show()
             }
             if(allOk){
-                val registerRequest = RegisterRequest(name = nameREditText.text.toString(),mail =emailREditText.text.toString(),password = pwdREditText.text.toString(),isShopkeeper = !switch.isActivated )
+                val registerRequest = RegisterRequest(name = nameREditText.text.toString(),mail =emailREditText.text.toString(),password = pwdREditText.text.toString(),isShopkeeper = !switch.isChecked )
                 viewModel.sendRegisterRequest(registerRequest)
             }
         }
@@ -58,8 +58,8 @@ class Register: AppCompatActivity() {
             when(response) {
                 is Resource.Success -> {
                     Toast.makeText(this, "Registered User", Toast.LENGTH_SHORT).show()
-                    val intent: Intent = Intent(this, UserScreen::class.java)
-                    startActivity(intent)
+                    //val intent: Intent = Intent(this, UserScreen::class.java)
+                    //startActivity(intent)
                 }
                 is Resource.Error -> {
                     Toast.makeText(this, response.message, Toast.LENGTH_SHORT).show()
