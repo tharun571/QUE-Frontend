@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/dhruv/.gradle/caches/transforms-2/files-2.1/2d276ff68301273f862b001a3ccf3bbc/core-1.5.0-alpha05/res/values-v16/values-v16.xml",
+                    "source": "/home/tharun05/.gradle/caches/transforms-2/files-2.1/2d276ff68301273f862b001a3ccf3bbc/core-1.5.0-alpha05/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/dhruv/.gradle/caches/transforms-2/files-2.1/b68f176dc2e6819a41b19b11701634f4/appcompat-1.2.0/res/values-v16/values-v16.xml",
+                    "source": "/home/tharun05/.gradle/caches/transforms-2/files-2.1/b68f176dc2e6819a41b19b11701634f4/appcompat-1.2.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

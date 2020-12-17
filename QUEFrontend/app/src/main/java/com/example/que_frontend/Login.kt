@@ -13,6 +13,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
+import com.example.que_frontend.OwnerScreen.Owner
+import com.example.que_frontend.UserData.Data
+import com.example.que_frontend.UserScreen.User
 import com.example.que_frontend.helpers.Resource
 import com.example.que_frontend.model.LoginRequest
 import com.example.que_frontend.viewmodel.AuthViewModel
@@ -82,6 +85,20 @@ class Login: AppCompatActivity() {
                     
                   //  val intent:Intent = Intent(this, UserScreen::class.java)
                   //  startActivity(intent)
+                    Data.Name=response.data.data.name;
+                    Data.id=response.data.data._id;
+                    Data.mail=response.data.data.mail;
+                    Data.auth=response.data.token;
+                    Data.que=response.data.data.queue;
+                    Data.queCount = listOf(0)
+                    if (response.data.data.isShopkeeper){
+                          val intent:Intent = Intent(this, Owner::class.java)
+                          startActivity(intent)
+                    }
+                    else{
+                        val intent:Intent = Intent(this, User::class.java)
+                        startActivity(intent)
+                    }
 
                 }
                 is Resource.Error -> {

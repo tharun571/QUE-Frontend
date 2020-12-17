@@ -58,8 +58,8 @@ class Register: AppCompatActivity() {
             when(response) {
                 is Resource.Success -> {
                     Toast.makeText(this, "Registered User", Toast.LENGTH_SHORT).show()
-                    //val intent: Intent = Intent(this, UserScreen::class.java)
-                    //startActivity(intent)
+                    val intent: Intent = Intent(this, Login::class.java)
+                    startActivity(intent)
                 }
                 is Resource.Error -> {
                     Toast.makeText(this, response.message, Toast.LENGTH_SHORT).show()

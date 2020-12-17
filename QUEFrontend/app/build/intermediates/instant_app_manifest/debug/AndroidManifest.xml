@@ -22,7 +22,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.que_frontend.Owner.OwnerScreen" />
+        <activity android:name="com.example.que_frontend.UserScreen.User" />
+        <activity android:name="com.example.que_frontend.OwnerScreen.Owner" />
         <activity android:name="com.example.que_frontend.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +31,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.que_frontend.Register" />
+        <activity
+            android:name="com.example.que_frontend.Register"
+            android:noHistory="true" >
+        </activity>
         <activity android:name="com.example.que_frontend.MainActivity" />
 
         <provider
