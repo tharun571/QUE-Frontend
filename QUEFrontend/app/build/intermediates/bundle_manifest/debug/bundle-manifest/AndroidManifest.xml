@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.que_frontend.OwnerScreen" />
+        <activity android:name="com.example.que_frontend.Owner.OwnerScreen" />
         <activity android:name="com.example.que_frontend.Login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,9 +30,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.que_frontend.Register" />
-        <activity android:name="com.example.que_frontend.UserScreen" />
-        <activity android:name="com.example.que_frontend.MainActivity" >
-        </activity>
+        <activity android:name="com.example.que_frontend.MainActivity" />
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"

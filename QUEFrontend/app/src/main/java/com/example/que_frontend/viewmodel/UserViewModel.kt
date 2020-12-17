@@ -19,10 +19,10 @@ class UserViewModel : ViewModel(){
     val leaveQueResponse = MutableLiveData<Resource<LeaveQueResponse>>()
     val quePositionResponse = MutableLiveData<Resource<QuePositionResponse>>()
 
-    fun joinQue(queId:String, userId:String) {
+    fun joinQue(queId:String, userId:String,authHeader:String) {
         viewModelScope.launch {
             joinQueResponse.postValue(Resource.Loading())
-            val response = userRepository.joinQue(queId,userId)
+            val response = userRepository.joinQue(queId,userId,authHeader)
             joinQueResponse.postValue(handleJoinQue(response))
         }
     }
@@ -38,10 +38,10 @@ class UserViewModel : ViewModel(){
         return Resource.Error(message)
     }
 
-    fun leaveQue(queId:String, userId:String) {
+    fun leaveQue(queId:String, userId:String, authHeader: String) {
         viewModelScope.launch {
             leaveQueResponse.postValue(Resource.Loading())
-            val response = userRepository.leaveQue(queId,userId)
+            val response = userRepository.leaveQue(queId,userId,authHeader)
             leaveQueResponse.postValue(handleLeaveQue(response))
         }
     }
@@ -57,10 +57,10 @@ class UserViewModel : ViewModel(){
         return Resource.Error(message)
     }
 
-    fun quePosition(queId:String, userId:String) {
+    fun quePosition(queId:String, userId:String,authHeader: String) {
         viewModelScope.launch {
             quePositionResponse.postValue(Resource.Loading())
-            val response = userRepository.quePosition(queId,userId)
+            val response = userRepository.quePosition(queId,userId,authHeader)
             quePositionResponse.postValue(handleQuePosition(response))
         }
     }

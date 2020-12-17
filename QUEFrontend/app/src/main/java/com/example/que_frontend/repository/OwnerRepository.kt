@@ -9,19 +9,19 @@ import retrofit2.Response
 import retrofit2.http.Path
 
 class OwnerRepository {
-    suspend fun getCreateResponse( id: String): Response<createQueResponse> {
-        return QueApi.ownerApiService.getCreateResponse(id)
+    suspend fun getCreateResponse( id: String, authHeader:String): Response<createQueResponse> {
+        return QueApi.ownerApiService.getCreateResponse(id,authHeader)
     }
 
-    suspend fun deleteQue(queId: String,  userId: String): Response<DeleteQueResponse> {
-        return QueApi.ownerApiService.deleteQue(queId, userId)
+    suspend fun deleteQue(queId: String,  userId: String, authHeader:String): Response<DeleteQueResponse> {
+        return QueApi.ownerApiService.deleteQue(queId, userId, authHeader)
     }
 
-    suspend fun getCount(queId: String): Response<TotalCountResponse> {
-        return QueApi.ownerApiService.getCount(queId)
+    suspend fun getCount(queId: String ,authHeader: String): Response<TotalCountResponse> {
+        return QueApi.ownerApiService.getCount(queId,authHeader)
     }
 
-    suspend fun getNames( queId: String): Response<TotalNamesResponse> {
-        return QueApi.ownerApiService.getNames(queId)
+    suspend fun getNames( queId: String,authHeader: String): Response<TotalNamesResponse> {
+        return QueApi.ownerApiService.getNames(queId,authHeader)
     }
 }

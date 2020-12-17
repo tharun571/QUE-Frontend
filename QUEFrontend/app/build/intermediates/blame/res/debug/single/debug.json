@@ -4,12 +4,12 @@
         "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/drawable_bg.xml.flat",
         "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/drawable/bg.xml"
+    },
+    {
+        "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/layout_activity_login.xml.flat",
@@ -28,12 +28,12 @@
         "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/font/prodbold.ttf"
     },
     {
-        "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/layout_activity_user_screen.xml.flat",
-        "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/layout/activity_user_screen.xml"
-    },
-    {
         "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/layout_activity_user_screen.xml.flat",
+        "source": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/src/main/res/layout/activity_user_screen.xml"
     },
     {
         "merged": "/home/dhruv/Desktop/QUE-Frontend/QUEFrontend/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",

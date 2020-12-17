@@ -2,6 +2,7 @@ package com.example.que_frontend
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -15,10 +16,14 @@ import androidx.security.crypto.MasterKey
 import com.example.que_frontend.helpers.Resource
 import com.example.que_frontend.model.LoginRequest
 import com.example.que_frontend.viewmodel.AuthViewModel
+import com.example.que_frontend.viewmodel.OwnerViewModel
 
 class Login: AppCompatActivity() {
     private val viewModel: AuthViewModel by lazy {
         ViewModelProvider(this).get(AuthViewModel::class.java)
+    }
+    private val ownerViewModel: OwnerViewModel by lazy {
+        ViewModelProvider(this).get(com.example.que_frontend.viewmodel.OwnerViewModel::class.java)
     }
     private lateinit var loginRequest: LoginRequest
     lateinit var loginButton:Button
@@ -74,8 +79,9 @@ class Login: AppCompatActivity() {
                     saveToken(response.data!!.token)
 
                     Toast.makeText(this, "Logged in User", Toast.LENGTH_SHORT).show()
-                    val intent:Intent = Intent(this, UserScreen::class.java)
-                    startActivity(intent)
+                    
+                  //  val intent:Intent = Intent(this, UserScreen::class.java)
+                  //  startActivity(intent)
 
                 }
                 is Resource.Error -> {

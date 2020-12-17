@@ -1,5 +1,6 @@
 package com.example.que_frontend.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -51,6 +52,7 @@ class AuthViewModel: ViewModel() {
     private fun handleLoginResponse(response: Response<LoginResponse>): Resource<LoginResponse> {
         if (response.isSuccessful) {
             response.body()?.let { loginResponse ->
+                Log.i("login",loginResponse.token)
                 return Resource.Success(loginResponse)
             }
         }
