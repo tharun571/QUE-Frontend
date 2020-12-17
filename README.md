@@ -16,3 +16,12 @@ We aim to provide an easier way for people to access services that require waiti
 <img align="left" alt="Mongoose" width="26px" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/29527/preview_image/mongoose.jpg" />
 <img align="left" alt="MongoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
 <img align="left" alt="Express" width="26px" src="https://p7.hiclipart.com/preview/780/57/127/node-js-javascript-database-mongodb-native.jpg" />
+
+## Pictures
+![alt text](https://static.toiimg.com/thumb/msid-71966504,width-1200,height-900,resizemode-4/.jpg)
+
+## From the Developers
+
+### Challenges
+A major challenge that we faced was keeping track of authentic accounts, people leaving the queue, and ...
+* * *
