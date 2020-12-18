@@ -48,8 +48,9 @@ We aim to provide an easier way for people to access services that require waiti
 <br></br>
 
 # From the Developers
-
-### Challenges Faced
 * * *
-A major challenge that we faced was keeping track of authentic accounts, people leaving the queue, and ...
+### Challenges Faced
+* A major challenge that we faced was keeping track of authentic accounts and people leaving the queue.
+* Connecting frontend and backend required learning new technologies.
+* Keeping track of enqueing and dequeing and updating it live on the app was a challenge.
 
