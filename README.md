@@ -41,7 +41,7 @@ We aim to provide an easier way for people to access services that require waiti
 * * *
 
 
-<img align="left" alt="MongoDB" width="140px" src="/img/kisspng-database-logo-brand-product-design-computer-mongodb-5b6d9c941dafa2.5542815515339101641216.png" />
+<img align="left" alt="MongoDB" width="120px" src="/img/kisspng-database-logo-brand-product-design-computer-mongodb-5b6d9c941dafa2.5542815515339101641216.png" />
 <img align="left" alt="Git" width="40px" src="/img/kisspng-github-repository-commit-version-control-github-5ab8bdf71d6218.7448464515220566951204.png" />
 <img align="left" alt="Node" width="40px" src="/img/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" />
 <img align="left" alt="VS Code" width="40px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png" />
