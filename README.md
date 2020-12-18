@@ -9,12 +9,11 @@ We aim to provide an easier way for people to access services that require waiti
 
 ### Working of the API
 * * * 
-+ A Route to register the user.
-  - It takes in the following parameters: 
-      * Name
-      * Email
-      * Password
-      * User is a shopkeeper or the service taker.
++ A Route to register the user. It takes in the following parameters: 
+  - Name
+  - Email
+  - Password
+  - User is a shopkeeper or the service taker.
 + Login using unique mail and password.
   - Returns a jwt token and the user info if successful login else retruns invalid credentials.
   - In case of an <strong>internal server error</strong> it returns 500 with that error.
@@ -46,8 +45,9 @@ We aim to provide an easier way for people to access services that require waiti
 <img align="left" alt="Mongoose" width="26px" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/29527/preview_image/mongoose.jpg" />
 <img align="left" alt="MongoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
 <img align="left" alt="Express" width="26px" src="https://p7.hiclipart.com/preview/780/57/127/node-js-javascript-database-mongodb-native.jpg" />
+<br></br>
 
-## From the Developers
+# From the Developers
 
 ### Challenges Faced
 * * *
