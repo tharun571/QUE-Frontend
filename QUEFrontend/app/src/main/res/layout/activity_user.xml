@@ -4,8 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserScreen.User">
+    tools:context=".UserScreen.User"
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Sit Back and Relax. We Will Notify You."
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:fontFamily="@font/prodital"
+        android:textColor="#000"
+        android:id="@+id/title"
+        android:layout_marginTop="32dp"
+         />
     <EditText
+        android:background="@drawable/edit_text_border"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -17,7 +33,7 @@
         android:id="@+id/joinque"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button1"
         android:text="Join Que"
         android:paddingHorizontal="16dp"
         android:layout_gravity="bottom|center_horizontal"
@@ -39,7 +55,7 @@
         android:id="@+id/leave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button1"
         android:text="Leave Que"
         android:paddingHorizontal="16dp"
         android:layout_gravity="bottom|center_horizontal"

@@ -20,5 +20,6 @@ public class Data {
     public static List<String> que;
     public static List<Integer> queCount = new ArrayList<Integer>() ;
     public static List<Que> queList;
+    public static boolean alreadyInQue = false;
 
 }

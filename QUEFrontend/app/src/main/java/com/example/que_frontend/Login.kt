@@ -1,12 +1,11 @@
 package com.example.que_frontend
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.edit
 import androidx.lifecycle.Observer
@@ -29,6 +28,9 @@ class Login: AppCompatActivity() {
     private val ownerViewModel: OwnerViewModel by lazy {
         ViewModelProvider(this).get(com.example.que_frontend.viewmodel.OwnerViewModel::class.java)
     }
+    lateinit var loginPreferences: SharedPreferences
+    lateinit var loginPreferencesEditor: SharedPreferences.Editor
+    lateinit var checkBox: CheckBox
     private lateinit var loginRequest: LoginRequest
     lateinit var loginButton:Button
     lateinit var emailEditText: EditText
@@ -37,6 +39,22 @@ class Login: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+//        checkBox = findViewById(R.id.saveLoginCheckBox)
+//        loginPreferences = getSharedPreferences("loginPrefs", Context.MODE_PRIVATE)
+//        loginPreferencesEditor = loginPreferences.edit()
+//        var saveLogin = loginPreferences.getBoolean("saveLogin",false)
+//        if(saveLogin){
+//            emailEditText.setText(loginPreferences.getString("username",""))
+//            pwdEditText.setText(loginPreferences.getString("password",""))
+//            checkBox.setChecked(true)
+//        }
+
+
+
+
+
+
         loginButton = findViewById(R.id.login)
         emailEditText = findViewById(R.id.emailEditText)
         pwdEditText = findViewById(R.id.pwdEditText)
@@ -63,6 +81,7 @@ class Login: AppCompatActivity() {
             }
 
             if (allOk) {
+
                 loginRequest = LoginRequest(email, password)
                 viewModel.sendLoginRequest(loginRequest)
 
@@ -80,6 +99,9 @@ class Login: AppCompatActivity() {
             response ->
             when(response) {
                 is Resource.Success -> {
+//                    if(checkBox.isChecked){
+//                        loginPreferences.putBoolean
+//                    }
                     saveToken(response.data!!.token)
 
                     Toast.makeText(this, "Logged in User", Toast.LENGTH_SHORT).show()
@@ -100,6 +122,12 @@ class Login: AppCompatActivity() {
                     }
                     else{
 
+                        if(!response.data.data.queue.isNullOrEmpty()){
+                            Data.alreadyInQue=true
+                            Data.que = response.data.data.queue
+
+                            Log.w("QWE","QWE "+response.data.data.queue)
+                        }
                         val intent:Intent = Intent(this, User::class.java)
                         startActivity(intent)
                     }

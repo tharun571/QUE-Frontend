@@ -13,13 +13,15 @@
         >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
             android:background="@drawable/transpbg"
-            android:padding="50dp"
+            android:padding="24dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
             android:layout_margin="10dp"
             android:paddingHorizontal="8dp"
             android:paddingVertical="8dp"
@@ -48,8 +50,10 @@
 
 
             <EditText
+                android:textColorHint="#696969"
                 android:id="@+id/emailREditText"
-                android:layout_width="208dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="248dp"
                 android:drawableLeft="@drawable/email"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -57,8 +61,10 @@
                 android:hint="Emai ID"
                 android:layout_marginTop="24dp"/>
             <EditText
+                android:textColorHint="#696969"
                 android:id="@+id/nameREditText"
-                android:layout_width="208dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="248dp"
                 android:drawableLeft="@drawable/person"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -66,9 +72,10 @@
                 android:hint="Name" />
 
             <EditText
+                android:textColorHint="#696969"
                 android:id="@+id/pwdReditText"
-                android:layout_width="208dp"
-
+                android:layout_width="248dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:hint="Password"
                 android:drawableLeft="@drawable/lock"
                 android:layout_height="wrap_content"
@@ -81,9 +88,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:text="Customer? "
-                android:textSize="20dp"
-                android:layout_marginTop="16dp"
-                android:fontFamily="@font/leoscar"
+                android:textSize="16sp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/prodreg"
                 />
 
             <LinearLayout

@@ -26,24 +26,35 @@ class User : AppCompatActivity() {
     lateinit var code : EditText
     lateinit var pos : TextView
     lateinit var queId: String
+    lateinit var title: TextView
+    val CHANNEL = "Channel1"
     private val viewModel: UserViewModel by lazy {
         ViewModelProvider(this).get(com.example.que_frontend.viewmodel.UserViewModel::class.java)
     }
-    var notificationManager: NotificationManager? = null
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_user)
 
-        notificationManager =
-                getSystemService(
-                        Context.NOTIFICATION_SERVICE) as NotificationManager
+
+
 
         code = findViewById(R.id.code)
         joinque = findViewById(R.id.joinque)
         leave = findViewById(R.id.leave)
         pos = findViewById(R.id.pos)
+        title = findViewById(R.id.title)
+
+
+        if(Data.alreadyInQue){
+            queId = Data.que[0]
+            joinque()
+
+        }
 
         pos.text=""
+        title.text= "Hi There, "+Data.Name
 
         observeLiveData()
 
@@ -54,6 +65,7 @@ class User : AppCompatActivity() {
 
     }
 
+
     private fun observeLiveData(){
 
         viewModel.joinQueResponse.observe(this, Observer {
@@ -62,15 +74,7 @@ class User : AppCompatActivity() {
                 is Resource.Success -> {
 
                     queId = code.text.toString()
-
-                    Toast.makeText(this, "Joined Que", Toast.LENGTH_SHORT).show()
-                    joinque.visibility = View.GONE
-                    code.visibility = View.GONE
-
-                    leave.visibility = View.VISIBLE
-                    pos.visibility = View.VISIBLE
-
-                    quejoined()
+                    joinque()
 
 
 
@@ -87,15 +91,13 @@ class User : AppCompatActivity() {
             when(response) {
                 is Resource.Success -> {
 
-                   val position  = response.data?.data?.plus(1)
+
+
+                    val position  = response.data?.data?.plus(1)
 
                     pos.text = position.toString()
-                    if (position != null) {
-                        if(position<=5){
 
-                            notif("$position People Left")
-                        }
-                    }
+
 
 
                 }
@@ -106,10 +108,13 @@ class User : AppCompatActivity() {
             }
         })
 
+
         viewModel.leaveQueResponse.observe(this, Observer {
             response ->
             when(response) {
                 is Resource.Success -> {
+
+
 
                     pos.text=""
 
@@ -132,6 +137,21 @@ class User : AppCompatActivity() {
 
     }
 
+    private fun joinque(){
+
+
+        title.text = "Sit Back and Relax. We Will Notify You."
+
+        Toast.makeText(this, "Joined Que", Toast.LENGTH_SHORT).show()
+        joinque.visibility = View.GONE
+        code.visibility = View.GONE
+
+        leave.visibility = View.VISIBLE
+        pos.visibility = View.VISIBLE
+
+        quejoined()
+    }
+
     private fun quejoined(){
         viewModel.quePosition(queId, Data.id, "Bearer "+Data.auth)
 
@@ -143,11 +163,6 @@ class User : AppCompatActivity() {
 
     }
 
-    private fun notif(name:String){
-        val notification = Notification.Builder(this)
-                .setContentTitle("QUE")
-                .setContentText(name)
-                .setNumber(10)
-                .build()
-    }
+    
+
 }
