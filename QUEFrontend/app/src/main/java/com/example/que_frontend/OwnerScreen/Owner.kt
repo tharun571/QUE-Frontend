@@ -1,12 +1,9 @@
 package com.example.que_frontend.OwnerScreen
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
-import android.util.AttributeSet
 import android.util.Log
-import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
@@ -15,15 +12,20 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.que_frontend.OwnerScreen.Adapter.RecyclerAdapter
 import com.example.que_frontend.R
+import com.example.que_frontend.UserData.Adapter
 import com.example.que_frontend.UserData.Data
 import com.example.que_frontend.UserScreen.User
 import com.example.que_frontend.helpers.Resource
 import com.example.que_frontend.viewmodel.OwnerViewModel
 
-class Owner : AppCompatActivity() {
+class Owner : AppCompatActivity(), RecyclerAdapter.OnItemClickListener {
 
     lateinit var createQue: Button
     lateinit var recyclerView: RecyclerView
+    lateinit var adapter: RecyclerAdapter
+
+    var pos:Int = -1
+
     private val viewModel: OwnerViewModel by lazy {
         ViewModelProvider(this).get(com.example.que_frontend.viewmodel.OwnerViewModel::class.java)
     }
@@ -35,8 +37,17 @@ class Owner : AppCompatActivity() {
         createQue = findViewById(R.id.createQue)
         recyclerView = findViewById(R.id.ownerRecycler)
 
+
+        var i=0
+        while(i<Data.que.size){
+            Data.queCount.add(0)
+            ++i
+        }
+
+        getCount()
+        recycler()
         observeLiveData()
-        ques()
+
 
 
         createQue!!.setOnClickListener {
@@ -52,12 +63,31 @@ class Owner : AppCompatActivity() {
                 is Resource.Success -> {
 
                     Toast.makeText(this, "Que Created", Toast.LENGTH_SHORT).show()
+                    Data.que.add(response.data?.data?._id)
 
-                    Data.que.toMutableList().add(response.data?.data?._id)
+                    while(!Data.que.contains(response.data?.data?._id)){
 
+                    }
 
-                    ques()
-                    recycler()
+                    adapter.display(Data.que,Data.queCount)
+
+                }
+                is Resource.Error -> {
+
+                    Toast.makeText(this, response.message, Toast.LENGTH_SHORT).show()
+                }
+            }
+        })
+
+        viewModel.deleteQueResponse.observe(this, Observer {
+            response ->
+            when(response) {
+                is Resource.Success -> {
+
+                    Toast.makeText(this, "Que Deleted", Toast.LENGTH_SHORT).show()
+                    val value = Data.que.get(pos)
+                    Data.que.remove(value)
+                    adapter.notifyItemRemoved(pos)
 
                 }
                 is Resource.Error -> {
@@ -72,12 +102,11 @@ class Owner : AppCompatActivity() {
             when(response) {
                 is Resource.Success -> {
 
-                    Toast.makeText(this, "Que Created", Toast.LENGTH_SHORT).show()
+                   Data.queCount.add(response.data?.data?.count)
 
-                    Data.queCount.toMutableList().add(response.data?.data?.count)
-                    Log.w("QWER",""+response.data?.data?.count)
-
-
+                    if(Data.que.size == Data.queCount.size){
+                        adapter.display(Data.que,Data.queCount)
+                    }
 
                 }
                 is Resource.Error -> {
@@ -86,26 +115,40 @@ class Owner : AppCompatActivity() {
                 }
             }
         })
+
+
     }
 
-    private fun ques(){
-     for(ele in Data.que){
-         Log.w("QWER",ele)
-         viewModel.getCount(ele,"Bearer "+Data.auth)
-     }
+
+    private fun getCount(){
+
+       for(ele in Data.que){
+           viewModel.getCount(ele, "Bearer "+Data.auth)
+       }
 
     }
 
     private fun recycler(){
 
-//        lateinit var linearLayoutManager: LinearLayoutManager
-//        linearLayoutManager = LinearLayoutManager(this)
-//        recyclerView.layoutManager = linearLayoutManager
-//        lateinit var adapter: RecyclerAdapter
-//
-//            adapter = RecyclerAdapter(Data.que, Data.queCount)
-//
-//
-//        recyclerView.adapter = adapter
+        lateinit var linearLayoutManager: LinearLayoutManager
+        linearLayoutManager = LinearLayoutManager(this)
+        recyclerView.layoutManager = linearLayoutManager
+        adapter = RecyclerAdapter(Data.que,Data.queCount, viewModel,this,this,recyclerView,this)
+        recyclerView.adapter = adapter
+        Adapter.adapter=adapter
     }
+
+    override fun onItemClick(position: Int) {
+
+        Log.w("asd","qwsa")
+        val delete = findViewById<TextView>(R.id.deleteque)
+
+            Log.w("asd","qwsa1")
+            viewModel.deleteQue(Data.que.get(position), Data.id, "Bearer "+Data.auth)
+            pos=position
+
+
+    }
+
+
 }

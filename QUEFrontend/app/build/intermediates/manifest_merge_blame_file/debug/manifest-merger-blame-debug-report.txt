@@ -6,74 +6,74 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml
+8-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml
+9-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:5:5-67
-11-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:5:22-64
+11-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:7:5-28:19
+13-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:7:5-28:19
 14        android:allowBackup="true"
-14-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:8:9-35
+14-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.5.0-alpha05] /home/tharun05/.gradle/caches/transforms-2/files-2.1/2d276ff68301273f862b001a3ccf3bbc/core-1.5.0-alpha05/AndroidManifest.xml:24:18-86
+15-->[androidx.core:core:1.5.0-alpha05] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\2d276ff68301273f862b001a3ccf3bbc\core-1.5.0-alpha05\AndroidManifest.xml:24:18-86
 16        android:debuggable="true"
 17        android:extractNativeLibs="false"
 18        android:icon="@mipmap/ic_launcher"
-18-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:9:9-43
+18-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:9:9-43
 19        android:label="@string/app_name"
-19-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:10:9-41
+19-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:10:9-41
 20        android:roundIcon="@mipmap/ic_launcher_round"
-20-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:11:9-54
+20-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:11:9-54
 21        android:supportsRtl="true"
-21-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:12:9-35
+21-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:12:9-35
 22        android:testOnly="true"
 23        android:theme="@style/AppTheme" >
-23-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:13:9-40
+23-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:13:9-40
 24        <activity android:name="com.example.que_frontend.UserScreen.User" />
-24-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:14:9-62
-24-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:14:19-50
+24-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:14:9-62
+24-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:14:19-50
 25        <activity android:name="com.example.que_frontend.OwnerScreen.Owner" />
-25-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:15:9-55
-25-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:15:19-52
+25-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:15:9-55
+25-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:15:19-52
 26        <activity android:name="com.example.que_frontend.Login" >
-26-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:17:9-23:20
-26-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:17:19-40
+26-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:17:9-23:20
+26-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:17:19-40
 27            <intent-filter>
-27-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:18:13-22:29
+27-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:18:13-22:29
 28                <action android:name="android.intent.action.MAIN" />
-28-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:19:17-69
-28-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:19:25-66
+28-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:19:17-69
+28-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:19:25-66
 29
 30                <category android:name="android.intent.category.LAUNCHER" />
-30-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:21:17-77
-30-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:21:27-74
+30-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:21:17-77
+30-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:21:27-74
 31            </intent-filter>
 32        </activity>
 33        <activity
-33-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:24:9-26:20
+33-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:24:9-26:20
 34            android:name="com.example.que_frontend.Register"
-34-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:24:19-43
+34-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:24:19-43
 35            android:noHistory="true" >
-35-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:25:13-37
+35-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:25:13-37
 36        </activity>
 37        <activity android:name="com.example.que_frontend.MainActivity" />
-37-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:27:9-50
-37-->/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/src/main/AndroidManifest.xml:27:19-47
+37-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:27:9-50
+37-->C:\Users\rajak\Desktop\QUE-Frontend\QUEFrontend\app\src\main\AndroidManifest.xml:27:19-47
 38
 39        <provider
-39-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/tharun05/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+39-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\ce1510696d8bd798b15ba5d8bcca73a7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-40-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/tharun05/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+40-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\ce1510696d8bd798b15ba5d8bcca73a7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
 41            android:authorities="com.example.que_frontend.lifecycle-process"
-41-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/tharun05/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+41-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\ce1510696d8bd798b15ba5d8bcca73a7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
 42            android:exported="false"
-42-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/tharun05/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+42-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\ce1510696d8bd798b15ba5d8bcca73a7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
 43            android:multiprocess="true" />
-43-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/tharun05/.gradle/caches/transforms-2/files-2.1/ce1510696d8bd798b15ba5d8bcca73a7/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+43-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\rajak\.gradle\caches\transforms-2\files-2.1\ce1510696d8bd798b15ba5d8bcca73a7\jetified-lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
 44    </application>
 45
 46</manifest>

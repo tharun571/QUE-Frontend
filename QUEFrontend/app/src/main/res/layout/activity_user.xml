@@ -21,5 +21,30 @@
         android:text="Join Que"
         android:paddingHorizontal="16dp"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="POSITION"
+        android:textSize="36sp"
+        android:fontFamily="@font/prodbold"
+        android:textColor="#000"
+        android:id="@+id/pos"
+        android:visibility="gone"
+        />
+    <Button
+        android:id="@+id/leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Leave Que"
+        android:paddingHorizontal="16dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:visibility="gone"
+
+        />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

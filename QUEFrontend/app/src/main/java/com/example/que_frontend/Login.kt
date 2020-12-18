@@ -15,6 +15,7 @@ import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import com.example.que_frontend.OwnerScreen.Owner
 import com.example.que_frontend.UserData.Data
+import com.example.que_frontend.UserData.Que
 import com.example.que_frontend.UserScreen.User
 import com.example.que_frontend.helpers.Resource
 import com.example.que_frontend.model.LoginRequest
@@ -89,13 +90,16 @@ class Login: AppCompatActivity() {
                     Data.id=response.data.data._id;
                     Data.mail=response.data.data.mail;
                     Data.auth=response.data.token;
-                    Data.que=response.data.data.queue;
-                    Data.queCount = listOf(0)
+
                     if (response.data.data.isShopkeeper){
+
+                        Data.que=response.data.data.queue;
+
                           val intent:Intent = Intent(this, Owner::class.java)
                           startActivity(intent)
                     }
                     else{
+
                         val intent:Intent = Intent(this, User::class.java)
                         startActivity(intent)
                     }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/tharun05/Desktop/Personal Projects/QUE-Frontend/QUEFrontend/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "outputFile": "C:\\Users\\rajak\\Desktop\\QUE-Frontend\\QUEFrontend\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
-                    "source": "/home/tharun05/.gradle/caches/transforms-2/files-2.1/47d4893243c8bd1081a35441876ebb60/material-1.2.0/res/values-v28/values-v28.xml",
+                    "source": "C:\\Users\\rajak\\.gradle\\caches\\transforms-2\\files-2.1\\47d4893243c8bd1081a35441876ebb60\\material-1.2.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/tharun05/.gradle/caches/transforms-2/files-2.1/b68f176dc2e6819a41b19b11701634f4/appcompat-1.2.0/res/values-v28/values-v28.xml",
+                    "source": "C:\\Users\\rajak\\.gradle\\caches\\transforms-2\\files-2.1\\b68f176dc2e6819a41b19b11701634f4\\appcompat-1.2.0\\res\\values-v28\\values-v28.xml",
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",
