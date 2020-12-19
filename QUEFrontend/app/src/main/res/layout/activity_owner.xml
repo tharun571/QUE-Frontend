@@ -4,20 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OwnerScreen.Owner">
+    tools:context=".OwnerScreen.Owner"
+    android:background="@drawable/bg">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="8dp"
+            android:background="#33dcdcdc"
+            android:fontFamily="@font/prodital"
+            android:gravity="center_horizontal"
+            android:text="Your Que"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="36sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="8dp"
+        android:layout_below="@id/title1"
         android:id="@+id/ownerRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
 
+    </RelativeLayout>
     <Button
         android:id="@+id/createQue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button"
+        android:background="@drawable/button1"
         android:text="Create Que"
+        android:fontFamily="@font/prodreg"
+        android:textColor="#000"
         android:paddingHorizontal="16dp"
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="32dp"/>

@@ -9,11 +9,13 @@ import android.view.ViewGroup
 import android.widget.RelativeLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import com.example.que_frontend.R
 import com.example.que_frontend.UserData.Data
+import com.example.que_frontend.UserData.Delete
 import com.example.que_frontend.helpers.Resource
 import com.example.que_frontend.viewmodel.OwnerViewModel
 
@@ -28,7 +30,7 @@ class RecyclerAdapter(val que: List<String>,val queCount:List<Int>, val viewMode
         val view = LayoutInflater
                 .from(parent.context)
                 .inflate(R.layout.owner_item, parent, false)
-        as RelativeLayout
+        as CardView
 
         return QueViewHolder(
                 view
@@ -44,11 +46,10 @@ class RecyclerAdapter(val que: List<String>,val queCount:List<Int>, val viewMode
        holder.quecount.text=   queCount.get(position).toString()
 
 
-
-
-
-
-
+        holder.deleteque.setOnClickListener {
+            Delete.pos = position
+            viewModel.deleteQue(que.get(position),Data.id, "Bearer "+Data.auth)
+        }
 
 
     }
@@ -70,12 +71,12 @@ class RecyclerAdapter(val que: List<String>,val queCount:List<Int>, val viewMode
 
     }
 
-   inner class QueViewHolder(val view : RelativeLayout):RecyclerView.ViewHolder(view), View.OnClickListener {
+   inner class QueViewHolder(val view : CardView):RecyclerView.ViewHolder(view), View.OnClickListener {
 
-        val container = view.findViewById(R.id.container) as RelativeLayout
         val deleteque = view.findViewById(R.id.deleteque) as TextView
         val quecode = view.findViewById(R.id.quecode) as TextView
         val quecount = view.findViewById(R.id.quecount) as TextView
+       val recyclerView1 = view.findViewById(R.id.namesRecycler)as RecyclerView
 
         init {
             view.setOnClickListener(this)
