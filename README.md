@@ -38,8 +38,8 @@ We aim to provide an easier way for people to access services that require waiti
 
 |                                |                                |                                |
 | :----------------------------: | :----------------------------: | :----------------------------: |
-| ![alt text]("/img/SS/ss1.jpg") | ![alt text]("/img/SS/ss2.jpg") | ![alt text]("/img/SS/ss3.jpg") |
-| ![alt text]("/img/SS/ss4.jpg") | ![alt text]("/img/SS/ss5.jpg") |
+| ![alt text](img/SS/ss1.jpg) | ![alt text](img/SS/ss2.jpg) | ![alt text](img/SS/ss3.jpg) |
+| ![alt text](img/SS/ss4.jpg) | ![alt text](img/SS/ss5.jpg) |
 
 ## Tools And Technologies Used
 
