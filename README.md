@@ -1,7 +1,5 @@
 # QUE-Frontend
 
-![alt text](https://static.toiimg.com/thumb/msid-71966504,width-1200,height-900,resizemode-4/.jpg)
-
 ## Introduction
 
 ---
