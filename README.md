@@ -49,9 +49,9 @@ We aim to provide an easier way for people to access services that require waiti
 <img align="left" alt="MongoDB" width="80px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png"/>
 <img align="left" alt="Express" width="250px" src="/img/kisspng-web-development-express-js-javascript-software-fra-frame-work-5b15153d24d3f6.9133133015281083491509.png"/>
 </br>
-- - -
 
-
+##
+## 
 # From the Developers
 
 ---
