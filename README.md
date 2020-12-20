@@ -61,3 +61,11 @@ We aim to provide an easier way for people to access services that require waiti
 - A major challenge that we faced was keeping track of authentic accounts and people leaving the queue.
 - Connecting frontend and backend required learning new technologies.
 - Keeping track of enqueing and dequeing and updating it live on the app was a challenge.
+
+### Developers
+  * Frontend
+    + <a href="https://github.com/dhruv1294">Dhruv</a>
+    + <a href="https://github.com/Tharun-b777">Tharun</a>
+    + <a href="https://github.com/saloni-rakholiya">Saloni</a>
+  * Backend
+    + <a href="https://github.com/marmikupadhyay">Marmik</a>
