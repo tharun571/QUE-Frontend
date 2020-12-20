@@ -1,7 +1,5 @@
 # QUE-Frontend
 
-![alt text](https://static.toiimg.com/thumb/msid-71966504,width-1200,height-900,resizemode-4/.jpg)
-
 ## Introduction
 
 ---
@@ -36,20 +34,20 @@ We aim to provide an easier way for people to access services that require waiti
 
 ---
 
-|                                |                                |                                |
-| :----------------------------: | :----------------------------: | :----------------------------: |
-| ![alt text]('/img/SS/ss1.jpg') | ![alt text]('/img/SS/ss2.jpg') | ![alt text]('/img/SS/ss3.jpg') |
-| ![alt text]('/img/SS/ss4.jpg') | ![alt text]('/img/SS/ss5.jpg') |
+|                             |                             |                             |
+| :-------------------------: | :-------------------------: | :-------------------------: |
+| ![alt text](img/SS/ss1.jpg) | ![alt text](img/SS/ss2.jpg) | ![alt text](img/SS/ss3.jpg) |
+| ![alt text](img/SS/ss4.jpg) | ![alt text](img/SS/ss5.jpg) |
 
 ## Tools And Technologies Used
 
 ---
 
-<img align="left" alt="MongoDB" width="120px" src="/img/kisspng-database-logo-brand-product-design-computer-mongodb-5b6d9c941dafa2.5542815515339101641216.png" />
-<img align="left" alt="Git" width="40px" src="/img/kisspng-github-repository-commit-version-control-github-5ab8bdf71d6218.7448464515220566951204.png" />
-<img align="left" alt="Node" width="40px" src="/img/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" />
-<img align="left" alt="VS Code" width="40px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png" />
-<img align="left" alt="Express" width="140px" src="/img/kisspng-web-development-express-js-javascript-software-fra-frame-work-5b15153d24d3f6.9133133015281083491509.png" />
+<img align="left" alt="Visual Studio Code" width="200px" height="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
+<img align="left" alt="Node.js" width="150px" src="/img/kisspng-github-repository-commit-version-control-github-5ab8bdf71d6218.7448464515220566951204.png" />
+<img align="left" alt="Mongoose" width="150px" src="/img/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" />
+<img align="left" alt="MongoDB" width="150px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png" />
+<img align="left" alt="Express" width="150px" src="/img/kisspng-web-development-express-js-javascript-software-fra-frame-work-5b15153d24d3f6.9133133015281083491509.png" />
 <br></br>
 
 # From the Developers
@@ -61,3 +59,12 @@ We aim to provide an easier way for people to access services that require waiti
 - A major challenge that we faced was keeping track of authentic accounts and people leaving the queue.
 - Connecting frontend and backend required learning new technologies.
 - Keeping track of enqueing and dequeing and updating it live on the app was a challenge.
+
+### Developers
+
+- Frontend
+  - <a href="https://github.com/dhruv1294">Dhruv</a>
+  - <a href="https://github.com/Tharun-b777">Tharun</a>
+  - <a href="https://github.com/saloni-rakholiya">Saloni</a>
+- Backend
+  - <a href="https://github.com/marmikupadhyay">Marmik</a>
