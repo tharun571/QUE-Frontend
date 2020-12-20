@@ -43,12 +43,14 @@ We aim to provide an easier way for people to access services that require waiti
 
 ---
 
-<img align="left" alt="Visual Studio Code" width="150px" height="26px" src="/img/mongo.png" />
-<img align="left" alt="Node.js" width="150px" src="/img/kisspng-github-repository-commit-version-control-github-5ab8bdf71d6218.7448464515220566951204.png" />
-<img align="left" alt="Mongoose" width="150px" src="/img/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" />
-<img align="left" alt="MongoDB" width="150px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png" />
-<img align="left" alt="Express" width="150px" src="/img/kisspng-web-development-express-js-javascript-software-fra-frame-work-5b15153d24d3f6.9133133015281083491509.png" />
-<br></br>
+<img align="left" alt="Visual Studio Code" width="80px" src="/img/mongo.png" />
+<img align="left" alt="Node.js" width="80px" src="/img/kisspng-github-repository-commit-version-control-github-5ab8bdf71d6218.7448464515220566951204.png" />
+<img align="left" alt="Mongoose" width="80px" src="/img/kisspng-node-js-javascript-npm-computer-icons-web-applicat-5ae0f85a3ac1c4.3592483215246930822407.png" />
+<img align="left" alt="MongoDB" width="80px" src="/img/kisspng-visual-studio-code-microsoft-visual-studio-text-ed-code-5ad11df9cab2b4.6559428115236541378303.png"/>
+<img align="left" alt="Express" width="250px" src="/img/kisspng-web-development-express-js-javascript-software-fra-frame-work-5b15153d24d3f6.9133133015281083491509.png"/>
+</br>
+- - -
+
 
 # From the Developers
 
